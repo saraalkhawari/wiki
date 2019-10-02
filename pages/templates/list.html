@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>List</title>
+    </head>
+    <body>
+        {% for n in page %}
+            
+                <ul>
+                    <li>
+                        <a href="{{ n.get_absolute_url }}">
+                            <h1> {{ n.title }}</h1> </a>
+                    </li>
+                </ul>
+            </a>
+        {% endfor %}
+    </body>
+</html>
